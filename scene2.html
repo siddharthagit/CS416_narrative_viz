@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Data visualiztion</title>
+    <link rel="stylesheet" type="text/css" href="./bs/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="sidd.css">
+    <!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- Load color scale -->
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="siddcommonvis.js"></script>
+<script src="sidvis2.js"></script>
+ 
+    <!-- Favicons -->
+    <meta name="theme-color" content="#7952b3">
+
+
+
+</head>
+
+<body onload="showBubbleChart2('#my_dataviz', -1);">
+
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <strong>Spotify:</strong>
+                </a>
+             
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container text-center sidd_scene_nav" >
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a href="index.html" class="btn btn-primary btn-lg  btn-space" role="button" aria-pressed="true">Start</a>
+                <a href="scene1.html" class="btn btn-primary active btn-lg  btn-space" role="button" aria-pressed="true">Previous</a>
+                <a href="scene3.html" class="btn btn-primary active btn-lg  btn-space" role="button" aria-pressed="true">Next</a>
+            </div>
+        </div>
+        <div class="container text-center sidd_scene_nav">
+            <h1> Danceability Vs Energy</h1>
+            Graph showing the top 100 most streamed music on Spotify over time and how they varies with Danceability vs
+            Energy: The size of the bubble represents the number of times the track was played. We can see with some outliers
+            Danceability increases with Energy for most track
+
+        </div>
+        <div class="album py-5 bg-light" >
+            <div class="container text-center" >
+                <div class="row row-cols-12 row-cols-sm-12 row-cols-md-12 g-3">
+                    <div class="display" style="height:100% !important">
+                        <div id="my_dataviz">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    
+    <footer class="text-muted py-5">
+        <div class="container">
+            <em>Data Source: https://www.kaggle.com/datasets/nelgiriyewithana/most-streamed-spotify-songs-2024</em>
+            <p class="float-end mb-1">
+                <a href="#">Back to top</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

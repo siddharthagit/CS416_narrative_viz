@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<head>
+    <title>Spotify - Introspection</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="./bs/css/bootstrap.min.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+
+            <div class="row" style="margin-top:30px;">
+                <div class="col">
+                    <img src="Spotify.png" alt="Spotify" width="100" height="100">
+                    <h1 id="intro">Music Attribute's Analysis from Spotify</h1>
+                </div>
+            </div>
+
+
+            <div class="row" style="margin-top:30px;">
+                <div class="col">
+                    <span class="italic" "bold">By Siddhartha B - UIUC CS 416</span>
+                </div>
+            </div>
+
+            <hr>
+            <div class="row" style="margin-top:30px;">
+                <div class="col">
+                    <h3>
+                        Let's analyze some interesting facts from Spotity
+                    </h3>
+                </div>
+            </div>
+            <div class="row" style="margin-top:30px;">
+                <div class="col" style="text-align: left;">
+                    <span style="text-align: left;">
+                    Spotify uses different Music attributes such as Danceability, Valence, engery etc. We will examine
+                    how
+                    the Danceability changes
+                    with respect to Valence and energy.
+                    <br>And try to see how some of these attributes effects popularity of a track.
+                    We will also see highest tracks and artists who score well on Danceability.
+                    <br><B>Danceability </B>: Measures how well a song is suited for dancing.
+                    <br><B>Valence </B>: Measures Happyness of a song.
+                    <br><B>Engergy </B>: Measures perceptual measure of intensity or measrure.
+                    We will see how this factors effects popularity of songs
+                </span>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top:30px;">
+                <div class="col" style="text-align: left;">
+                   <h3><B>Data set: </B></h3> 
+                    Data set used can be found here
+                    <br><B>https://www.kaggle.com/datasets/nelgiriyewithana/most-streamed-spotify-songs-2024</B>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top:30px;">
+                <div class="col" style="text-align: left;">
+                   <h3><B>About this Visualization: </B></h3> 
+                   Popularity of a track depends on various factor and this visualization tries to capture the idea of popular tracks 
+                   and try to see the corelation between Danceability and other parameters like Valence Energy and also drills down
+                   to find tracks that are most danceable in each year and find the artists which has most danceable tracks.
+                </div>
+            </div>
+
+            <div class="row" style="margin-top:30px;">
+                <div class="col" style="text-align: left;">
+                   <h3><B>Narrative Structure: </B></h3> 
+                   This visualization uses martini glass narrative visualization technique. Each slide contains guidance on how to interact with the visualization.
+                </div>
+            </div>
+
+            <div class="row" style="margin-top:30px;">
+                <div class="col" style="text-align: left;">
+                   <h3><B>Scenes: </B></h3> 
+                   The scenes themselves are constructed via different HTML pages. Each scene navigagte via the buttons.The “Next/Previous” buttons allow users to navigate from scene to scene independently, but the structure helps guide the overall narrative. Each scene is composed of a unique chart that highlights its own distinct message.
+                </div>
+            </div>
+
+            <div class="row" style="margin-top:30px;">
+                <div class="col" style="text-align: left;">
+                   <h3><B>Annotations: </B></h3> 
+                   Annotations remain consistent on the charts based on the chart type, For instance first 3 scenese uses same annotation as the chart type is same.
+                </div>
+            </div>
+            <div class="row" style="margin-top:30px;">
+                <div class="col" style="text-align: left;">
+                   <h3><B>Parameters: </B></h3> 
+                   Parameter is used in the slide 6 for user exploration. User can drill down and explore the same charts those were presented from previous scenes and explore the data for selected year.
+                </div>
+            </div>
+            <div class="row" style="margin-top:30px;">
+                <div class="col" style="text-align: left;">
+                   <h3><B>Triggers: </B></h3> 
+                   The triggers are implemented via events and callbacks, such as “mouseover”, “mouseout” and “click”. When specific html elements experience these events, the callback function is invoked, and we can change the visualization with respect to the action indicated by the trigger. 
+                   The example triggers we have here are the dropdowns and hovering tooltip. Also we have delay triggers which high lights some important attributes of the chartsthough annotations.
+                </div>
+            </div>
+
+            <div class="row" style="margin-top:30px;">
+                <div class="col" style="text-align: center;">
+                    <a href="scene1.html" class="btn btn-primary">Enter</a>
+                </div>
+            </div>
+
+         
+            <hr>
+            <footer class="text-muted py-5">
+                <div class="container">
+
+                </div>
+            </footer>
+
+</html>

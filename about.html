@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<head>
+    <title>Spotify - Introspection</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="./bs/css/bootstrap.min.css">
+
+   
+</head>
+
+<body >
+    <a href="#intro" class="back">Back to Top</a>
+    <h2>About this Visualization</h2>
+    <p>
+        This is a narrative visualization created for the CS 498 Data Visualization course.
+    </p>
+    <h3>Messaging</h3>
+    <p>
+        Fuel-efficient cars emit less pollution over the same amount of distance traveled. They also cost less to
+        operate. Buying a more fuel-efficient car can save you thousands of dollars on fuel costs over time and can
+        often balance out a higher purchase price if you keep the car long enough. There are many factors that can
+        affect the mileage of your car, but in this interactive visualization, we will explore 2023 data about the
+        respective highway and city MPGs of automobiles, with respect to just a few of these factors, like engine
+        cylinders, fuel type and the make of the vehicle. If you are looking for a cost-effective car, you should pick a
+        car which is having cylinder count and engine displacement on the lower side. Another message is good mileage
+        cars are better for environment.
+    </p>
+    <h3>Narrative Structure</h3>
+    <p>
+        The above visualization utilizes the slideshow narrative visualization technique, while incorporating hybrid
+        elements of the drill-down technique. Each slide contains guidance on how to interact with the visualization.
+    </p>
+    <h3>Visual Structure</h3>
+    <p>
+        The structure of the slides guides users
+        from one idea to the next, but there is still room for individual exploration at each stage. We accomplish
+        visual consistency by maintaining uniform elements throughout, introducing a mixture of text, image and chart
+        elements, and having meaningful colors (highest APS is shown by green color and lowest one is shown as maroon).
+        Every
+        chart has some cool data population animation which will demand users attention.
+    </p>
+    <h3>Scenes</h3>
+    <p>
+        The scenes themselves are constructed via HTML id tags. Each scene has a unique id that is linked via the
+        buttons.The “Next/Previous”
+        buttons allow users to navigate from scene to scene independently, but the structure helps guide the overall
+        narrative.
+        Each scene is composed of a unique chart that highlights its own distinct message.
+    </p>
+    <h3>Annotations</h3>
+    <p>
+        Annotations remain consistent on the charts, even throughout changes triggered by the interactions. This allows
+        the user
+        to have some grounding on the overall message the visualization is trying to communicate. For example, the
+        annotation
+        about a relatively good gas mileage stays consistent throughout the vis transformation from multiple car brands
+        to single car brand data representation.
+        This can help a user to better understand which car gives better mileage.
+    </p>
+    <h3>Parameters</h3>
+    <p>
+        The visualizations have a handful of relevant parameters that help the user better explore the data. By
+        interacting with
+        JavaScript input features, such as the dropdown filter in vis1 or the interactive legend in vis2, the user can
+        choose to
+        see
+        data about a specific category, or even filter out the datapoints by hovering over specific engine cylinder
+        categories.
+        The user input is used as a parameter that controls what the visualization portrays.
+    </p>
+    <h3>Triggers</h3>
+    <p>
+        The triggers are implemented via events and callbacks, such as “mouseover”, “mouseout” and “click”. When
+        specific html elements
+        experience these events, the callback function is invoked, and we can change the visualization with respect to
+        the
+        action indicated by the trigger. The example triggers we have here are the dropdowns and hovering legend.
+    </p>
+    <hr>
+</body>
+
+
+</html>
